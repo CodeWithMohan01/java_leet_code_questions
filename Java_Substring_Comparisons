@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Java_Substring_Comparisons {
+    public static void main(String[] args) {
+        String s;
+        String[] s2 = new String[7];
+        int k;
+
+        Scanner sc = new Scanner(System.in);
+        s = sc.nextLine();
+        k = sc.nextInt();
+        
+        for(int i=0; i<(s.length())-(k-1); i++){
+            s2[i] = s.substring(i, i+k);
+            System.out.println(s2[i]);
+        }
+    
+
+    }
+}
