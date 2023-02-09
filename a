@@ -1,0 +1,18 @@
+public class transpose {
+    public static void name() {
+            
+    }
+
+    public int[][] transpose(int[][] matrix) {
+        int n = matrix.length;
+        int[][] trans = new int[n][];
+        for(int i=0; i<(matrix.length); i++)
+        {
+            for(int j=0; j<(matrix[i].length); j++)
+            {
+                trans[i][j] = matrix[i][j];
+            }
+        }
+        return trans;
+    }
+}
